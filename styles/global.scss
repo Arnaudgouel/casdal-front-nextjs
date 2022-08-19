@@ -1,0 +1,39 @@
+
+$primary: #E63946;
+$secondary: #457B9D;
+$dark: #1D3557;
+$light: #F1FAEE;
+$info: #A8DADC;
+
+$font-family-base: 'Blinker', 'sans-serif';
+
+$component-active-bg: $secondary;
+$accordion-button-active-bg: tint-color($component-active-bg, 90%);
+$accordion-button-active-color: shade-color($secondary, 10%);
+  
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+.box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  height: calc(100% + 26px);
+  width: calc(100% + 26px);
+  overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollspy-example {
+  position: relative;
+  overflow-y: auto;
+}
+
+#root {
+  height: 100vmin;
+}
